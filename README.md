@@ -1,6 +1,5 @@
 
 
-## example
 
 # Granjavilla
 
