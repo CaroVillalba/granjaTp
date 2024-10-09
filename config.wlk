@@ -1,10 +1,12 @@
+import wollok.game.*
 
-
-object init {
+object juego {
     // aca se inicializan los objetos 
 
-    method iniciar() {
-
+    method iniciar  () {
+        game.addVisual("corn_baby.png")
+        game.addVisual("wheat_0-png")
+        game.addVisual("tomaco.png")
     }
 }
 
