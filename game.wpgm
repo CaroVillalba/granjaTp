@@ -1,5 +1,16 @@
 import wollok.game.*
+import granja.*
+import config.*
 
-program juego {
+program granja {
+  game.title("Granja")
+	game.height(10)
+	game.width(10)
+	game.boardGround("ground.png")
+
+
+
+	juego.iniciar()
+
   game.start()
 }
