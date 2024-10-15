@@ -7,7 +7,7 @@ program granja {
 	game.height(10)
 	game.width(10)
 	game.boardGround("ground.png")
-
+	config.confifgurarTeclas()
 
 
 	juego.iniciar()
