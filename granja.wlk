@@ -6,7 +6,9 @@ object hector {
 
     method image() = "player.png"
     //method regar
-	//method sembrar
+	method sembrar(cultivo){
+		game.addVisual(cultivo)
+	}
 	//method cultivar
 	//method vender
     
