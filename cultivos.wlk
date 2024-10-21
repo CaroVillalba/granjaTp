@@ -9,7 +9,7 @@ class Maiz{
 
 
 	method image()  = 'corn_' + sufijo +'.png' 
-    method regada() {
+    method regandose() {
         sufijo = 'adult'
         adulto = true
     }
@@ -20,9 +20,13 @@ class Tomaco{
 	var property adulto = true 
     const property precio = 80
 
+    method EstaArriba(){
+        return (self.position().y() == 9)
+    }
+
 	method image() = 'tomaco.png' 
-    method regada() {
-        position=Tomaco.position().up(1)
+    method regandose() {
+        if(!self.EstaArriba()){ position = self.position().up(1)  }
     }
 }
 
@@ -33,11 +37,12 @@ class Trigo {
     
     method precio() = nivel - 1 * 100
 	method image()= 'wheat_' + nivel + '.png' 
-    method regada() {
-        if (nivel <= 4){
+    method regandose() {
+        if (nivel < 3){
             nivel += 1
         } else {
             adulto = true
+            nivel = 0 //reseteo el nivel 
         }
     }
 }
